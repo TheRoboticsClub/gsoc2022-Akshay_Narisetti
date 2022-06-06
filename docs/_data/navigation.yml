@@ -1,0 +1,7 @@
+main:
+  - title: "Home"
+    url: /
+  - title: "About Me"
+    url: https://akshaybuilds.com/
+  - title: "Project Github"
+    url: https://github.com/TheRoboticsClub/gsoc2022-Akshay_Narisetti
