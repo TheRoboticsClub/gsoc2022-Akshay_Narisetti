@@ -17,4 +17,4 @@ This [repository](https://github.com/TheRoboticsClub/gsoc2022-akshay_narisetti) 
 
 ## Conclusions
 
-I have successfully created a blogging website to document my GSoC 2022 Journey and logs, explored and gained deep understanding of Django side of RoboticsAcademy Project.
+I have successfully created a blogging website to document my Google Summer of Code 2022 Journey. I also explored and gained deep understanding of Django side of the RoboticsAcademy Project.
