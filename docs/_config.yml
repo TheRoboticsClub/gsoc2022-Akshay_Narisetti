@@ -22,7 +22,7 @@ title: GSOC 2022 - RoboticsAcademy
 email: akshaynarisettia@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   GSOC 2022 project for RoboticsAcademy. The main aim is to improve Autonomous Driving Exercises at RoboticsAcademy
-baseurl: "/gsoc2022-akshay_narisetti" # the subpath of your site, e.g. /blog
+baseurl: "/gsoc2022-Akshay_Narisetti" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  akshaynarisetti
