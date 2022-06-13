@@ -16,4 +16,4 @@ To kick off week 2 of the community bonding period We discussed at the beginning
 
 ## Conclusions
 
-Gazebo 11 plugins have majorly been explored, and the 3d lidar packages like Velodyne which generates a point cloud have been implemented. The [Ackermann Steering] (https://wiki.ros.org/action/fullsearch/ackermann_steering_controller) package which can be used on custom gazebo models has been explored. This package can be used at a later stage to add Ackermann steering to the call models.
+Gazebo 11 plugins have majorly been explored, and the 3d lidar packages like Velodyne which generates a point cloud have been implemented. The [Ackermann Steering](https://wiki.ros.org/action/fullsearch/ackermann_steering_controller) package which can be used on custom gazebo models has been explored. This package can be used at a later stage to add Ackermann steering to the call models.
