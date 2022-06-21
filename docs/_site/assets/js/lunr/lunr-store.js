@@ -10,4 +10,10 @@ var store = [{
         "tags": [],
         "url": "/gsoc2022-Akshay_Narisetti/2022/06/13/community-bonding-week-2.html",
         "teaser": null
+      },{
+        "title": "Coding Period - Week 3",
+        "excerpt":"Before actually going ahead and building the Ackermann steering on the real-world car it was important to implement it at a low scale i.e on a toy car, this checks out as a proof-of-concept for the upcoming weeks. Tasks Create Ackermann Steering on a Toy car. Convert linear and angular...","categories": [],
+        "tags": [],
+        "url": "/gsoc2022-Akshay_Narisetti/2022/06/20/Coding-Period-Week-3.html",
+        "teaser": null
       }]
