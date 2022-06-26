@@ -7,7 +7,7 @@ Before actually going ahead and building the Ackermann steering on the real-worl
 
 
 ### Tasks
-- [x] Create Ackermann Steering on a Toy car.
+- [x] Create Ackermann Steering on a Toy Car.
 - [x] Convert linear and angular messages into Ackermann steering messages used by the [Ackermann Steering Package](https://wiki.ros.org/action/fullsearch/ackermann_steering_controller).
 
 
