@@ -16,4 +16,10 @@ var store = [{
         "tags": [],
         "url": "/gsoc2022-Akshay_Narisetti/2022/06/20/Coding-Period-Week-3.html",
         "teaser": null
+      },{
+        "title": "Coding Period - Week 4",
+        "excerpt":"We had a discussion at the beginning of the week, the task at hand was to get a realistic Toyota Car running inside ROS and Gazebo with Ackermann physics. Tasks Build a Toyota Car model with Ackermann Physics. Conclusions Most Toyota Car packages of the models and their plugins being...","categories": [],
+        "tags": [],
+        "url": "/gsoc2022-Akshay_Narisetti/2022/06/26/Coding-Period-Week-4.html",
+        "teaser": null
       }]
