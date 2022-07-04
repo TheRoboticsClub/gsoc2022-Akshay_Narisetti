@@ -12,7 +12,7 @@ var store = [{
         "teaser": null
       },{
         "title": "Coding Period - Week 3",
-        "excerpt":"Before actually going ahead and building the Ackermann steering on the real-world car it was important to implement it at a low scale i.e on a toy car, this checks out as a proof-of-concept for the upcoming weeks. Tasks Create Ackermann Steering on a Toy car. Convert linear and angular...","categories": [],
+        "excerpt":"Before actually going ahead and building the Ackermann steering on the real-world car it was important to implement it at a low scale i.e on a toy car, this checks out as a proof-of-concept for the upcoming weeks. Tasks Create Ackermann Steering on a Toy Car. Convert linear and angular...","categories": [],
         "tags": [],
         "url": "/gsoc2022-Akshay_Narisetti/2022/06/20/Coding-Period-Week-3.html",
         "teaser": null
@@ -21,5 +21,11 @@ var store = [{
         "excerpt":"We had a discussion at the beginning of the week, the task at hand was to get a realistic Toyota Car running inside ROS and Gazebo with Ackermann physics. Tasks Build a Toyota Car model with Ackermann Physics. Conclusions Most Toyota Car packages of the models and their plugins being...","categories": [],
         "tags": [],
         "url": "/gsoc2022-Akshay_Narisetti/2022/06/26/Coding-Period-Week-4.html",
+        "teaser": null
+      },{
+        "title": "Coding Period - Week 5",
+        "excerpt":"After achieving the basic forward and backward motion of the Toyota Car, this week’s task is to implement the Ackermann steering which will enable the Toyota Car to steer in left and right directions making it a Completely abled Car. Tasks Implement the Toyota Car model with Ackermann Steering. Conclusions...","categories": [],
+        "tags": [],
+        "url": "/gsoc2022-Akshay_Narisetti/2022/07/03/Coding-Period-Week-5.html",
         "teaser": null
       }]
