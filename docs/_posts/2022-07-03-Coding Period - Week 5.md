@@ -14,4 +14,4 @@ After juggling a lot with the dependencies and plugins the Toyota Car model with
 
 ## Progress Video
 
-{% include video id="YJcfqoEN_XA" provider="youtube" %}
+{% include video id="jB0DKaMbeNg" provider="youtube" %}
