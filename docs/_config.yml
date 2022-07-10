@@ -35,6 +35,7 @@ plugins:
   - jekyll-feed
   - jekyll-include-cache
   - jekyll-paginate-v2
+  - jemoji
 
 
 

@@ -28,4 +28,10 @@ var store = [{
         "tags": [],
         "url": "/gsoc2022-Akshay_Narisetti/2022/07/03/Coding-Period-Week-5.html",
         "teaser": null
+      },{
+        "title": "Coding Period - Week 6",
+        "excerpt":"The Toyota Car has achieved the full Ackermann steering and movement needed to be an Autonomous car, but there was still something quite awry with it. So what went wrong 😔? The packages and hybrid plugins of the Toyota Car were never maintained after the ROSCON ‘17 Event, this was...","categories": [],
+        "tags": [],
+        "url": "/gsoc2022-Akshay_Narisetti/2022/07/10/Coding-Period-Week-6.html",
+        "teaser": null
       }]

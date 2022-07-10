@@ -1,0 +1,351 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Coding Period - Week 6 - GSOC 2022 - RoboticsAcademy</title>
+<meta name="description" content="The Toyota Car has achieved the full  Ackermann steering and movement needed to be an Autonomous car, but there was still something quite awry with it.  So what went wrong 😔?  The packages and hybrid plugins of the Toyota Car were never maintained after the ROSCON ‘17 Event, this was the time ROS as a framework had most changes to it. ROS Kinetic, which the Toyota Car was presented with went on to become ROS Melodic and then the currently used version to develop this project i.e ROS Noetic.  so to bring the Toyota Car to life a lot of dependencies and plugins had to be changed, when a dependency is changed the underlying code still remains the same and just uses the updated dependency to compile the code.  That was the problem in the case of our Toyota car model, well coming so far from a model that doesn’t work, I wasn’t going to leave it without a try. I geared up to solve all the errors the package had. Started from changing message types, plugins to joint state publishers.  QT4 THE DEAD END 🛑…  The underlying code had a QT4 dependency, one way of going about it is to assume none of the changes after QT5 would break the existing code. I started by changing the requirement dependency and the code did not compile, this only meant changing 100s of lines of code and adding to that was the missing QtCreator Docs that were needed for migration.  It meant only one thing, coming up with a new model, while I was at this there was always a Plan B. It was the Lincoln MKZ Model.  Things were quite straight forward from here, working with the Totota Car Model made it easy to deal with the Lincoln MKZ.">
+
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="GSOC 2022 - RoboticsAcademy">
+<meta property="og:title" content="Coding Period - Week 6">
+<meta property="og:url" content="http://localhost:4000/gsoc2022-Akshay_Narisetti/2022/07/10/Coding-Period-Week-6.html">
+
+
+  <meta property="og:description" content="The Toyota Car has achieved the full  Ackermann steering and movement needed to be an Autonomous car, but there was still something quite awry with it.  So what went wrong 😔?  The packages and hybrid plugins of the Toyota Car were never maintained after the ROSCON ‘17 Event, this was the time ROS as a framework had most changes to it. ROS Kinetic, which the Toyota Car was presented with went on to become ROS Melodic and then the currently used version to develop this project i.e ROS Noetic.  so to bring the Toyota Car to life a lot of dependencies and plugins had to be changed, when a dependency is changed the underlying code still remains the same and just uses the updated dependency to compile the code.  That was the problem in the case of our Toyota car model, well coming so far from a model that doesn’t work, I wasn’t going to leave it without a try. I geared up to solve all the errors the package had. Started from changing message types, plugins to joint state publishers.  QT4 THE DEAD END 🛑…  The underlying code had a QT4 dependency, one way of going about it is to assume none of the changes after QT5 would break the existing code. I started by changing the requirement dependency and the code did not compile, this only meant changing 100s of lines of code and adding to that was the missing QtCreator Docs that were needed for migration.  It meant only one thing, coming up with a new model, while I was at this there was always a Plan B. It was the Lincoln MKZ Model.  Things were quite straight forward from here, working with the Totota Car Model made it easy to deal with the Lincoln MKZ.">
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="2022-07-10T00:00:00+05:30">
+
+
+
+
+
+
+<link rel="canonical" href="http://localhost:4000/gsoc2022-Akshay_Narisetti/2022/07/10/Coding-Period-Week-6.html">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": null,
+      "url": "http://localhost:4000/gsoc2022-Akshay_Narisetti/"
+    
+  }
+</script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/gsoc2022-Akshay_Narisetti/feed.xml" type="application/atom+xml" rel="alternate" title="GSOC 2022 - RoboticsAcademy Feed">
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/gsoc2022-Akshay_Narisetti/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+          <a class="site-logo" href="/gsoc2022-Akshay_Narisetti/"><img src="/gsoc2022-Akshay_Narisetti/assets/images/logo.png" alt="GSOC 2022 - RoboticsAcademy"></a>
+        
+        <a class="site-title" href="/gsoc2022-Akshay_Narisetti/">
+          GSOC 2022 - RoboticsAcademy
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/gsoc2022-Akshay_Narisetti/">Home</a>
+            </li><li class="masthead__menu-item">
+              <a href="https://akshaybuilds.com/">About Me</a>
+            </li><li class="masthead__menu-item">
+              <a href="https://github.com/TheRoboticsClub/gsoc2022-Akshay_Narisetti">Project Github</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+
+  
+    
+
+
+
+<nav class="breadcrumbs">
+  <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+    
+    
+    
+      
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="/gsoc2022-Akshay_Narisetti/" itemprop="item"><span itemprop="name">Home</span></a>
+
+          <meta itemprop="position" content="1" />
+        </li>
+        <span class="sep">/</span>
+      
+      
+        
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="/gsoc2022-Akshay_Narisetti/2022" itemprop="item"><span itemprop="name">2022</span></a>
+          <meta itemprop="position" content="2" />
+        </li>
+        <span class="sep">/</span>
+      
+    
+      
+      
+        
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="/gsoc2022-Akshay_Narisetti/07" itemprop="item"><span itemprop="name">07</span></a>
+          <meta itemprop="position" content="3" />
+        </li>
+        <span class="sep">/</span>
+      
+    
+      
+      
+        
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="/gsoc2022-Akshay_Narisetti/10" itemprop="item"><span itemprop="name">10</span></a>
+          <meta itemprop="position" content="4" />
+        </li>
+        <span class="sep">/</span>
+      
+    
+      
+      
+        <li class="current">Coding Period - Week 6</li>
+      
+    
+  </ol>
+</nav>
+
+  
+
+
+<div id="main" role="main">
+  
+
+
+  <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Coding Period - Week 6">
+    <meta itemprop="description" content="The Toyota Car has achieved the full  Ackermann steering and movement needed to be an Autonomous car, but there was still something quite awry with it.So what went wrong 😔?The packages and hybrid plugins of the Toyota Car were never maintained after the ROSCON ‘17 Event, this was the time ROS as a framework had most changes to it. ROS Kinetic, which the Toyota Car was presented with went on to become ROS Melodic and then the currently used version to develop this project i.e ROS Noetic.so to bring the Toyota Car to life a lot of dependencies and plugins had to be changed, when a dependency is changed the underlying code still remains the same and just uses the updated dependency to compile the code.That was the problem in the case of our Toyota car model, well coming so far from a model that doesn’t work, I wasn’t going to leave it without a try. I geared up to solve all the errors the package had. Started from changing message types, plugins to joint state publishers.QT4 THE DEAD END 🛑…The underlying code had a QT4 dependency, one way of going about it is to assume none of the changes after QT5 would break the existing code. I started by changing the requirement dependency and the code did not compile, this only meant changing 100s of lines of code and adding to that was the missing QtCreator Docs that were needed for migration.It meant only one thing, coming up with a new model, while I was at this there was always a Plan B. It was the Lincoln MKZ Model.Things were quite straight forward from here, working with the Totota Car Model made it easy to deal with the Lincoln MKZ.">
+    <meta itemprop="datePublished" content="2022-07-10T00:00:00+05:30">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title p-name" itemprop="headline">
+            <a href="http://localhost:4000/gsoc2022-Akshay_Narisetti/2022/07/10/Coding-Period-Week-6.html" class="u-url" itemprop="url">Coding Period - Week 6
+</a>
+          </h1>
+          
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          1 minute read
+        
+      </span>
+    
+  </p>
+
+
+        </header>
+      
+
+      <section class="page__content e-content" itemprop="text">
+        
+        <p>The Toyota Car has achieved the full  Ackermann steering and movement needed to be an Autonomous car, but there was still something quite awry with it.</p>
+
+<h3 id="so-what-went-wrong-">So what went wrong 😔?</h3>
+
+<p>The packages and hybrid plugins of the Toyota Car were never maintained after the ROSCON ‘17 Event, this was the time ROS as a framework had most changes to it. ROS Kinetic, which the Toyota Car was presented with went on to become ROS Melodic and then the currently used version to develop this project i.e ROS Noetic.</p>
+
+<p>so to bring the Toyota Car to life a lot of dependencies and plugins had to be changed, when a dependency is changed the underlying code still remains the same and just uses the updated dependency to compile the code.</p>
+
+<p>That was the problem in the case of our Toyota car model, well coming so far from a model that doesn’t work, I wasn’t going to leave it without a try. I geared up to solve all the errors the package had. Started from changing message types, plugins to joint state publishers.</p>
+
+<p><strong>QT4 THE DEAD END 🛑…</strong></p>
+
+<p>The underlying code had a QT4 dependency, one way of going about it is to assume none of the changes after QT5 would break the existing code. I started by changing the requirement dependency and the code did not compile, this only meant changing 100s of lines of code and adding to that was the missing QtCreator Docs that were needed for migration.</p>
+
+<p>It meant only one thing, coming up with a new model, while I was at this there was always a Plan B. It was the <strong>Lincoln MKZ Model</strong>.</p>
+
+<p>Things were quite straight forward from here, working with the Totota Car Model made it easy to deal with the Lincoln MKZ.</p>
+
+<h3 id="tasks">Tasks</h3>
+<ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />Create a New Car Model.</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />Car Model should have Ackermann Physics with movable and turnable wheels replicating a real world car.</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />Modular code to add Sensors in future.</li>
+</ul>
+
+<h2 id="conclusions">Conclusions</h2>
+
+<p>Although it took a lot of time in making this possible the Lincoln MKZ model is sharp at looks and has even better physics compared to the Toyota Prius Model. It definitely stands as an upgrade to the Toyota Prius Model.</p>
+
+<h2 id="progress-video">Progress Video</h2>
+
+<!-- Courtesy of embedresponsively.com -->
+
+<div class="responsive-video-container">
+    <iframe src="https://www.youtube-nocookie.com/embed/CW2ddqtC-QY" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+  </div>
+
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time class="dt-published" datetime="2022-07-10T00:00:00+05:30">July 10, 2022</time></p>
+
+      </footer>
+
+      
+
+      
+  <nav class="pagination">
+    
+      <a href="/gsoc2022-Akshay_Narisetti/2022/07/03/Coding-Period-Week-5.html" class="pagination--pager" title="Coding Period - Week 5
+">Previous</a>
+    
+    
+      <a href="#" class="pagination--pager disabled">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+
+    
+
+    
+      <li><a href="/gsoc2022-Akshay_Narisetti/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2022 GSOC 2022 - RoboticsAcademy. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/gsoc2022-Akshay_Narisetti/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>
