@@ -138,7 +138,7 @@ http://www.car-engineer.com/vehicle-inertia-calculation-tool/
         <origin xyz="-0.25 0 ${base_height + 0.05}" rpy="0 0 0"/>  
         <geometry>
           <!--<mesh filename="package://catvehicle/meshes/ford_escape_no_wheels_2.dae"/>-->
-          <mesh filename="package://catvehicle/meshes/udemy_car_simplified_v2.dae"/>
+          <mesh filename="package://catvehicle/meshes/car_upgraded_camera.dae"/>
           <!--<box size="4.192 ${car_width} ${car_height}"/>-->
         </geometry>
      </visual>
@@ -439,6 +439,34 @@ http://www.car-engineer.com/vehicle-inertia-calculation-tool/
 
 
 <!-- Cameras-->
+
+		
+<joint name="camera_front_joint" type="fixed">	
+<origin xyz="0.75 0.0 ${0.725 + camera_box/2 + 1.25}" rpy="0 0 0"/>	
+	<axis xyz="0 0 1"/>	
+	<parent link="base_link"/>	
+	<child link="camera_front_link"/>	
+</joint>	
+<link name="camera_front_link">	
+	<collision>	
+	  <origin xyz="0 0 0" rpy="0 0 0"/>	
+	  <geometry>	
+	   <box size="0.001 0.001 0.001"/>	
+	  </geometry>	
+	</collision>	
+	<visual>	
+	  <origin xyz="0 0 0" rpy="0 0 0"/>	
+	  <geometry>	
+	  <box size="0.001 0.001 0.001"	
+/>	
+          </geometry>	
+	</visual>	
+    <inertial>	
+      <mass value="1e-5" />	
+      <origin xyz="0 0 0" rpy="0 0 0"/>	
+      <inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6" />	
+    </inertial>	
+</link>
 
 <!--
 <joint name="camera_right_joint" type="fixed">
