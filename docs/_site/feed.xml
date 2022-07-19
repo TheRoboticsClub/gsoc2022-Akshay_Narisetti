@@ -1,4 +1,36 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.2">Jekyll</generator><link href="http://localhost:4000/gsoc2022-Akshay_Narisetti/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/gsoc2022-Akshay_Narisetti/" rel="alternate" type="text/html" /><updated>2022-07-10T22:24:35+05:30</updated><id>http://localhost:4000/gsoc2022-Akshay_Narisetti/feed.xml</id><title type="html">GSOC 2022 - RoboticsAcademy</title><subtitle>GSOC 2022 project for RoboticsAcademy. The main aim is to improve Autonomous Driving Exercises at RoboticsAcademy</subtitle><entry><title type="html">Coding Period - Week 6</title><link href="http://localhost:4000/gsoc2022-Akshay_Narisetti/2022/07/10/Coding-Period-Week-6.html" rel="alternate" type="text/html" title="Coding Period - Week 6" /><published>2022-07-10T00:00:00+05:30</published><updated>2022-07-10T00:00:00+05:30</updated><id>http://localhost:4000/gsoc2022-Akshay_Narisetti/2022/07/10/Coding%20Period%20-%20Week%206</id><content type="html" xml:base="http://localhost:4000/gsoc2022-Akshay_Narisetti/2022/07/10/Coding-Period-Week-6.html">&lt;p&gt;The Toyota Car has achieved the full  Ackermann steering and movement needed to be an Autonomous car, but there was still something quite awry with it.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.2">Jekyll</generator><link href="http://localhost:4000/gsoc2022-Akshay_Narisetti/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/gsoc2022-Akshay_Narisetti/" rel="alternate" type="text/html" /><updated>2022-07-19T12:27:00+05:30</updated><id>http://localhost:4000/gsoc2022-Akshay_Narisetti/feed.xml</id><title type="html">GSOC 2022 - RoboticsAcademy</title><subtitle>GSOC 2022 project for RoboticsAcademy. The main aim is to improve Autonomous Driving Exercises at RoboticsAcademy</subtitle><entry><title type="html">Coding Period - Week 7</title><link href="http://localhost:4000/gsoc2022-Akshay_Narisetti/2022/07/18/Coding-Period-Week-7.html" rel="alternate" type="text/html" title="Coding Period - Week 7" /><published>2022-07-18T00:00:00+05:30</published><updated>2022-07-18T00:00:00+05:30</updated><id>http://localhost:4000/gsoc2022-Akshay_Narisetti/2022/07/18/Coding%20Period%20-%20Week%207</id><content type="html" xml:base="http://localhost:4000/gsoc2022-Akshay_Narisetti/2022/07/18/Coding-Period-Week-7.html">&lt;p&gt;We had a discussion at the beginning of the week, the task at hand was to get improve asthetics and also add a camera module to thee front of the Lincoln Mkz car.&lt;/p&gt;
+
+&lt;h3 id=&quot;the-camera-module-lag-&quot;&gt;The Camera module lag 😔&lt;/h3&gt;
+
+&lt;p&gt;A camera module is very important to a self-driving car and what’s more important is a latency-free camera module. I started by adding a camera module to the Lincoln Mkz and what resulted was a very good quality codec output but what followed was the latency in frames received. This latency could cause a delay in actions performed by the car and that will take a huge toll on the performance.&lt;/p&gt;
+
+&lt;p&gt;One way to decrease this latency is to compress the images and have a specific topic publish the compressed frames, &lt;strong&gt;&lt;a href=&quot;http://wiki.ros.org/compressed_image_transport&quot;&gt;Compressed_image_transport&lt;/a&gt;&lt;/strong&gt; package is one such package which does this job well.&lt;/p&gt;
+
+&lt;p&gt;After compressing the camera images the latency issue is solved 😊.&lt;/p&gt;
+
+&lt;h3 id=&quot;how-did-i-upgrade-the-textures&quot;&gt;How did I upgrade the Textures&lt;/h3&gt;
+
+&lt;p&gt;It’s very important for a simulation model to look realistic, a realistic model is what encourages anyone to code in a simulation mode.&lt;/p&gt;
+
+&lt;p&gt;I started by adding and testing out different color and textures to the car model in &lt;strong&gt;Fusion 360&lt;/strong&gt; and it was a big mistake as I realized fusion 360 does not export colors when exported as urdf.&lt;/p&gt;
+
+&lt;p&gt;After a little research I found out that &lt;strong&gt;Blender&lt;/strong&gt; is one such tool where this does not happen, so I applied all the changes I previously made inside blender.&lt;/p&gt;
+
+&lt;p&gt;Now the Car is as good as it gets!&lt;/p&gt;
+
+&lt;h3 id=&quot;tasks&quot;&gt;Tasks&lt;/h3&gt;
+&lt;ul class=&quot;task-list&quot;&gt;
+  &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; checked=&quot;checked&quot; /&gt;Upgrade Lincoln-mkz Car model with better Textures.&lt;/li&gt;
+  &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; checked=&quot;checked&quot; /&gt;Add a Camera Module to capture the front view of the car.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;progress-video&quot;&gt;Progress Video&lt;/h2&gt;
+
+&lt;!-- Courtesy of embedresponsively.com --&gt;
+
+&lt;div class=&quot;responsive-video-container&quot;&gt;
+    &lt;iframe src=&quot;https://www.youtube-nocookie.com/embed/mlFsR78OP7A&quot; frameborder=&quot;0&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+  &lt;/div&gt;</content><author><name></name></author><summary type="html">We had a discussion at the beginning of the week, the task at hand was to get improve asthetics and also add a camera module to thee front of the Lincoln Mkz car. The Camera module lag 😔</summary></entry><entry><title type="html">Coding Period - Week 6</title><link href="http://localhost:4000/gsoc2022-Akshay_Narisetti/2022/07/10/Coding-Period-Week-6.html" rel="alternate" type="text/html" title="Coding Period - Week 6" /><published>2022-07-10T00:00:00+05:30</published><updated>2022-07-10T00:00:00+05:30</updated><id>http://localhost:4000/gsoc2022-Akshay_Narisetti/2022/07/10/Coding%20Period%20-%20Week%206</id><content type="html" xml:base="http://localhost:4000/gsoc2022-Akshay_Narisetti/2022/07/10/Coding-Period-Week-6.html">&lt;p&gt;The Toyota Car has achieved the full  Ackermann steering and movement needed to be an Autonomous car, but there was still something quite awry with it.&lt;/p&gt;
 
 &lt;h3 id=&quot;so-what-went-wrong-&quot;&gt;So what went wrong 😔?&lt;/h3&gt;
 
