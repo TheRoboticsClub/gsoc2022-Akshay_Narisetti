@@ -34,4 +34,10 @@ var store = [{
         "tags": [],
         "url": "/gsoc2022-Akshay_Narisetti/2022/07/10/Coding-Period-Week-6.html",
         "teaser": null
+      },{
+        "title": "Coding Period - Week 7",
+        "excerpt":"We had a discussion at the beginning of the week, the task at hand was to get improve asthetics and also add a camera module to thee front of the Lincoln Mkz car. The Camera module lag 😔 A camera module is very important to a self-driving car and what’s...","categories": [],
+        "tags": [],
+        "url": "/gsoc2022-Akshay_Narisetti/2022/07/18/Coding-Period-Week-7.html",
+        "teaser": null
       }]
