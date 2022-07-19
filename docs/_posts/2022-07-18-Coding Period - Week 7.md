@@ -12,7 +12,7 @@ One way to decrease this latency is to compress the images and have a specific t
  
 After compressing the camera images the latency issue is solved 😊.
 
-### How did I upgrade the Textures
+### How did I upgrade the Textures?
 
 It's very important for a simulation model to look realistic, a realistic model is what encourages anyone to code in a simulation mode.
  
