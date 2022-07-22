@@ -43,7 +43,7 @@ Sensors are included separately, based on the arguments passed to the xacro incl
 <gazebo reference="front_laser_link">
         <sensor type="ray" name="sick_lms291">
               <pose>0 0 0 0 0 0</pose>
-                   <visualize>false</visualize>
+                   <visualize>true</visualize>
                     <update_rate>50</update_rate>
                        <ray>
                            <scan>
