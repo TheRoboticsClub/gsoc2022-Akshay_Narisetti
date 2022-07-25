@@ -40,4 +40,10 @@ var store = [{
         "tags": [],
         "url": "/gsoc2022-Akshay_Narisetti/2022/07/18/Coding-Period-Week-7.html",
         "teaser": null
+      },{
+        "title": "Coding Period - Week 8",
+        "excerpt":"This week kicked-off with a discussion on getting started with adding a 2D lidar and a new Ford Car Model with Ackermann Steering. 2D Lidar ⚡ Lidar is a very important technology in a self-driving car and to enable the Lincoln Mkz to be one, a lidar must be included....","categories": [],
+        "tags": [],
+        "url": "/gsoc2022-Akshay_Narisetti/2022/07/24/Coding-Period-Week-8.html",
+        "teaser": null
       }]

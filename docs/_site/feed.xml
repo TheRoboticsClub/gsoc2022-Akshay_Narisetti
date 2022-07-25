@@ -1,4 +1,32 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.2">Jekyll</generator><link href="http://localhost:4000/gsoc2022-Akshay_Narisetti/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/gsoc2022-Akshay_Narisetti/" rel="alternate" type="text/html" /><updated>2022-07-19T12:27:00+05:30</updated><id>http://localhost:4000/gsoc2022-Akshay_Narisetti/feed.xml</id><title type="html">GSOC 2022 - RoboticsAcademy</title><subtitle>GSOC 2022 project for RoboticsAcademy. The main aim is to improve Autonomous Driving Exercises at RoboticsAcademy</subtitle><entry><title type="html">Coding Period - Week 7</title><link href="http://localhost:4000/gsoc2022-Akshay_Narisetti/2022/07/18/Coding-Period-Week-7.html" rel="alternate" type="text/html" title="Coding Period - Week 7" /><published>2022-07-18T00:00:00+05:30</published><updated>2022-07-18T00:00:00+05:30</updated><id>http://localhost:4000/gsoc2022-Akshay_Narisetti/2022/07/18/Coding%20Period%20-%20Week%207</id><content type="html" xml:base="http://localhost:4000/gsoc2022-Akshay_Narisetti/2022/07/18/Coding-Period-Week-7.html">&lt;p&gt;We had a discussion at the beginning of the week, the task at hand was to get improve asthetics and also add a camera module to thee front of the Lincoln Mkz car.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.2">Jekyll</generator><link href="http://localhost:4000/gsoc2022-Akshay_Narisetti/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/gsoc2022-Akshay_Narisetti/" rel="alternate" type="text/html" /><updated>2022-07-25T15:05:10+05:30</updated><id>http://localhost:4000/gsoc2022-Akshay_Narisetti/feed.xml</id><title type="html">GSOC 2022 - RoboticsAcademy</title><subtitle>GSOC 2022 project for RoboticsAcademy. The main aim is to improve Autonomous Driving Exercises at RoboticsAcademy</subtitle><entry><title type="html">Coding Period - Week 8</title><link href="http://localhost:4000/gsoc2022-Akshay_Narisetti/2022/07/24/Coding-Period-Week-8.html" rel="alternate" type="text/html" title="Coding Period - Week 8" /><published>2022-07-24T00:00:00+05:30</published><updated>2022-07-24T00:00:00+05:30</updated><id>http://localhost:4000/gsoc2022-Akshay_Narisetti/2022/07/24/Coding%20Period%20-%20Week%208</id><content type="html" xml:base="http://localhost:4000/gsoc2022-Akshay_Narisetti/2022/07/24/Coding-Period-Week-8.html">&lt;p&gt;This week kicked-off with a discussion on getting started with adding a 2D lidar and a new Ford Car Model with Ackermann Steering.&lt;/p&gt;
+
+&lt;h3 id=&quot;2d-lidar-&quot;&gt;2D Lidar ⚡&lt;/h3&gt;
+
+&lt;p&gt;Lidar is a very important technology in a self-driving car and to enable the Lincoln Mkz to be one, a lidar must be included. The lidar has been placed at the front of the vehicle with 180 degrees view of the surroundings, due to the physical nature of the simulation the lidar cannot be used for a 360 degrees scan. This can be solved by a 3D lidar in the future implementation.&lt;/p&gt;
+
+&lt;h3 id=&quot;the-ford-flavor-&quot;&gt;The Ford Flavor 🚗&lt;/h3&gt;
+
+&lt;p&gt;As an addition to the lineup of the Car models we have decided to add the Ford Model, one that actually pupil can recognise and are familiar with. The model was chosen as it was the best fit on the existing structure of the Ackermann model.&lt;/p&gt;
+
+&lt;h3 id=&quot;tasks&quot;&gt;Tasks&lt;/h3&gt;
+&lt;ul class=&quot;task-list&quot;&gt;
+  &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; checked=&quot;checked&quot; /&gt;Add Ford Escape Car model with Ackermann Steering.&lt;/li&gt;
+  &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; checked=&quot;checked&quot; /&gt;Add a 2D Lidar Module to the Lincoln Mkz Model.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;progress-videos&quot;&gt;Progress Videos&lt;/h2&gt;
+
+&lt;!-- Courtesy of embedresponsively.com --&gt;
+
+&lt;div class=&quot;responsive-video-container&quot;&gt;
+    &lt;iframe src=&quot;https://www.youtube-nocookie.com/embed/V0PRyhk-iZ0&quot; frameborder=&quot;0&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+  &lt;/div&gt;
+
+&lt;!-- Courtesy of embedresponsively.com --&gt;
+
+&lt;div class=&quot;responsive-video-container&quot;&gt;
+    &lt;iframe src=&quot;https://www.youtube-nocookie.com/embed/DL-oSyVFte8&quot; frameborder=&quot;0&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+  &lt;/div&gt;</content><author><name></name></author><summary type="html">This week kicked-off with a discussion on getting started with adding a 2D lidar and a new Ford Car Model with Ackermann Steering. 2D Lidar ⚡ Lidar is a very important technology in a self-driving car and to enable the Lincoln Mkz to be one, a lidar must be included. The lidar has been placed at the front of the vehicle with 180 degrees view of the surroundings, due to the physical nature of the simulation the lidar cannot be used for a 360 degrees scan. This can be solved by a 3D lidar in the future implementation. The Ford Flavor 🚗 As an addition to the lineup of the Car models we have decided to add the Ford Model, one that actually pupil can recognise and are familiar with. The model was chosen as it was the best fit on the existing structure of the Ackermann model.</summary></entry><entry><title type="html">Coding Period - Week 7</title><link href="http://localhost:4000/gsoc2022-Akshay_Narisetti/2022/07/18/Coding-Period-Week-7.html" rel="alternate" type="text/html" title="Coding Period - Week 7" /><published>2022-07-18T00:00:00+05:30</published><updated>2022-07-18T00:00:00+05:30</updated><id>http://localhost:4000/gsoc2022-Akshay_Narisetti/2022/07/18/Coding%20Period%20-%20Week%207</id><content type="html" xml:base="http://localhost:4000/gsoc2022-Akshay_Narisetti/2022/07/18/Coding-Period-Week-7.html">&lt;p&gt;We had a discussion at the beginning of the week, the task at hand was to get improve asthetics and also add a camera module to thee front of the Lincoln Mkz car.&lt;/p&gt;
 
 &lt;h3 id=&quot;the-camera-module-lag-&quot;&gt;The Camera module lag 😔&lt;/h3&gt;
 
@@ -8,7 +36,7 @@
 
 &lt;p&gt;After compressing the camera images the latency issue is solved 😊.&lt;/p&gt;
 
-&lt;h3 id=&quot;how-did-i-upgrade-the-textures&quot;&gt;How did I upgrade the Textures&lt;/h3&gt;
+&lt;h3 id=&quot;how-did-i-upgrade-the-textures&quot;&gt;How did I upgrade the Textures?&lt;/h3&gt;
 
 &lt;p&gt;It’s very important for a simulation model to look realistic, a realistic model is what encourages anyone to code in a simulation mode.&lt;/p&gt;
 
