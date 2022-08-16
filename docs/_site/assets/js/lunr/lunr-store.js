@@ -46,4 +46,10 @@ var store = [{
         "tags": [],
         "url": "/gsoc2022-Akshay_Narisetti/2022/07/24/Coding-Period-Week-8.html",
         "teaser": null
+      },{
+        "title": "Coding Period - Week 9, Week 10",
+        "excerpt":"We discussed at the beginning of the week, that the task at hand was to integrate a 3D Lidar and GPS Sensor while also starting to incorporate the car model into the RoboticsAcademy Project. 3D Lidar ⚡ A 3D Lidar has been added to the car model, which can now...","categories": [],
+        "tags": [],
+        "url": "/gsoc2022-Akshay_Narisetti/2022/08/14/Coding-Period-Week-9,-10.html",
+        "teaser": null
       }]
