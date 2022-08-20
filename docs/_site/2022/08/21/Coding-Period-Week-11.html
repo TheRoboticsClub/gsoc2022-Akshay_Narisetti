@@ -1,0 +1,331 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Coding Period - Week 11 - GSOC 2022 - RoboticsAcademy</title>
+<meta name="description" content="To kick off week 11 of the coding period We discussed at the beginning of the week to start integrating the car model into Robotics Academy’s Exercises.  Integration  I started by creating a new exercise instead of changing the existing exercise because this will not break any code whatsoever. Once the exercise template was added I started by adding the Lincoln Mkz package to the RADI.  The car was imported but the plugins and functional elements were not working, most of the time was taken up for getting the plugins setup right, once the plugins were settled the car could be imported directly into gzweb.  Tasks    Improve Documentation in Robotics Academy for Developers.   Start Progress on Implementing Car Model into Car Junction Exercise.   Create a new exercise 3 from the car junction exercise.   Conclusion Most of the development of the car model has taken place in urdf and xacro, but the current state of car junction exercise is in sdf, so migrating all these files under a single roof will pave a way to implement remaining exercises as well. The coming week’s task will be more focussed towards this.">
+
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="GSOC 2022 - RoboticsAcademy">
+<meta property="og:title" content="Coding Period - Week 11">
+<meta property="og:url" content="http://localhost:4000/gsoc2022-Akshay_Narisetti/2022/08/21/Coding-Period-Week-11.html">
+
+
+  <meta property="og:description" content="To kick off week 11 of the coding period We discussed at the beginning of the week to start integrating the car model into Robotics Academy’s Exercises.  Integration  I started by creating a new exercise instead of changing the existing exercise because this will not break any code whatsoever. Once the exercise template was added I started by adding the Lincoln Mkz package to the RADI.  The car was imported but the plugins and functional elements were not working, most of the time was taken up for getting the plugins setup right, once the plugins were settled the car could be imported directly into gzweb.  Tasks    Improve Documentation in Robotics Academy for Developers.   Start Progress on Implementing Car Model into Car Junction Exercise.   Create a new exercise 3 from the car junction exercise.   Conclusion Most of the development of the car model has taken place in urdf and xacro, but the current state of car junction exercise is in sdf, so migrating all these files under a single roof will pave a way to implement remaining exercises as well. The coming week’s task will be more focussed towards this.">
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="2022-08-21T00:00:00+05:30">
+
+
+
+
+
+
+<link rel="canonical" href="http://localhost:4000/gsoc2022-Akshay_Narisetti/2022/08/21/Coding-Period-Week-11.html">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": null,
+      "url": "http://localhost:4000/gsoc2022-Akshay_Narisetti/"
+    
+  }
+</script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/gsoc2022-Akshay_Narisetti/feed.xml" type="application/atom+xml" rel="alternate" title="GSOC 2022 - RoboticsAcademy Feed">
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/gsoc2022-Akshay_Narisetti/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+          <a class="site-logo" href="/gsoc2022-Akshay_Narisetti/"><img src="/gsoc2022-Akshay_Narisetti/assets/images/logo.png" alt="GSOC 2022 - RoboticsAcademy"></a>
+        
+        <a class="site-title" href="/gsoc2022-Akshay_Narisetti/">
+          GSOC 2022 - RoboticsAcademy
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/gsoc2022-Akshay_Narisetti/">Home</a>
+            </li><li class="masthead__menu-item">
+              <a href="https://akshaybuilds.com/">About Me</a>
+            </li><li class="masthead__menu-item">
+              <a href="https://github.com/TheRoboticsClub/gsoc2022-Akshay_Narisetti">Project Github</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+
+  
+    
+
+
+
+<nav class="breadcrumbs">
+  <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+    
+    
+    
+      
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="/gsoc2022-Akshay_Narisetti/" itemprop="item"><span itemprop="name">Home</span></a>
+
+          <meta itemprop="position" content="1" />
+        </li>
+        <span class="sep">/</span>
+      
+      
+        
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="/gsoc2022-Akshay_Narisetti/2022" itemprop="item"><span itemprop="name">2022</span></a>
+          <meta itemprop="position" content="2" />
+        </li>
+        <span class="sep">/</span>
+      
+    
+      
+      
+        
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="/gsoc2022-Akshay_Narisetti/08" itemprop="item"><span itemprop="name">08</span></a>
+          <meta itemprop="position" content="3" />
+        </li>
+        <span class="sep">/</span>
+      
+    
+      
+      
+        
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="/gsoc2022-Akshay_Narisetti/21" itemprop="item"><span itemprop="name">21</span></a>
+          <meta itemprop="position" content="4" />
+        </li>
+        <span class="sep">/</span>
+      
+    
+      
+      
+        <li class="current">Coding Period - Week 11</li>
+      
+    
+  </ol>
+</nav>
+
+  
+
+
+<div id="main" role="main">
+  
+
+
+  <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Coding Period - Week 11">
+    <meta itemprop="description" content="To kick off week 11 of the coding period We discussed at the beginning of the week to start integrating the car model into Robotics Academy’s Exercises.IntegrationI started by creating a new exercise instead of changing the existing exercise because this will not break any code whatsoever. Once the exercise template was added I started by adding the Lincoln Mkz package to the RADI.The car was imported but the plugins and functional elements were not working, most of the time was taken up for getting the plugins setup right, once the plugins were settled the car could be imported directly into gzweb.Tasks  Improve Documentation in Robotics Academy for Developers.  Start Progress on Implementing Car Model into Car Junction Exercise.  Create a new exercise 3 from the car junction exercise.ConclusionMost of the development of the car model has taken place in urdf and xacro, but the current state of car junction exercise is in sdf, so migrating all these files under a single roof will pave a way to implement remaining exercises as well. The coming week’s task will be more focussed towards this.">
+    <meta itemprop="datePublished" content="2022-08-21T00:00:00+05:30">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title p-name" itemprop="headline">
+            <a href="http://localhost:4000/gsoc2022-Akshay_Narisetti/2022/08/21/Coding-Period-Week-11.html" class="u-url" itemprop="url">Coding Period - Week 11
+</a>
+          </h1>
+          
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          less than 1 minute read
+        
+      </span>
+    
+  </p>
+
+
+        </header>
+      
+
+      <section class="page__content e-content" itemprop="text">
+        
+        <p>To kick off week 11 of the coding period We discussed at the beginning of the week to start integrating the car model into Robotics Academy’s Exercises.</p>
+
+<h3 id="integration">Integration</h3>
+
+<p>I started by creating a new exercise instead of changing the existing exercise because this will not break any code whatsoever. Once the exercise template was added I started by adding the Lincoln Mkz package to the RADI.</p>
+
+<p>The car was imported but the plugins and functional elements were not working, most of the time was taken up for getting the plugins setup right, once the plugins were settled the car could be imported directly into gzweb.</p>
+
+<h3 id="tasks">Tasks</h3>
+<ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />Improve Documentation in Robotics Academy for Developers.</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />Start Progress on Implementing Car Model into Car Junction Exercise.</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />Create a new exercise 3 from the car junction exercise.</li>
+</ul>
+
+<h3 id="conclusion">Conclusion</h3>
+<p>Most of the development of the car model has taken place in urdf and xacro, but the current state of car junction exercise is in sdf, so migrating all these files under a single roof will pave a way to implement remaining exercises as well. The coming week’s task will be more focussed towards this.</p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time class="dt-published" datetime="2022-08-21T00:00:00+05:30">August 21, 2022</time></p>
+
+      </footer>
+
+      
+
+      
+  <nav class="pagination">
+    
+      <a href="/gsoc2022-Akshay_Narisetti/2022/08/14/Coding-Period-Week-9,-10.html" class="pagination--pager" title="Coding Period - Week 9, Week 10
+">Previous</a>
+    
+    
+      <a href="#" class="pagination--pager disabled">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+
+    
+
+    
+      <li><a href="/gsoc2022-Akshay_Narisetti/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2022 GSOC 2022 - RoboticsAcademy. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/gsoc2022-Akshay_Narisetti/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>
