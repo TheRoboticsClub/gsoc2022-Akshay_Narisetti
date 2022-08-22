@@ -15,7 +15,7 @@ The car was imported but the plugins and functional elements were not working, m
 ### Tasks
 - [x] Improve Documentation in Robotics Academy for Developers.
 - [x] Start Progress on Implementing Car Model into Car Junction Exercise.
-- [x] Create a new exercise 3 from the car junction exercise.
+- [x] Create a new exercise car_junction_3 from the car junction exercise.
  
 ### Conclusion
 Most of the development of the car model has taken place in urdf and xacro, but the current state of car junction exercise is in sdf, so migrating all these files under a single roof will pave a way to implement remaining exercises as well. The coming week's task will be more focussed towards this.
