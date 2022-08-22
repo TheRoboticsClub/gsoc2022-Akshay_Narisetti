@@ -52,4 +52,10 @@ var store = [{
         "tags": [],
         "url": "/gsoc2022-Akshay_Narisetti/2022/08/14/Coding-Period-Week-9,-10.html",
         "teaser": null
+      },{
+        "title": "Coding Period - Week 11",
+        "excerpt":"To kick off week 11 of the coding period We discussed at the beginning of the week to start integrating the car model into Robotics Academy’s Exercises. Integration I started by creating a new exercise instead of changing the existing exercise because this will not break any code whatsoever. Once...","categories": [],
+        "tags": [],
+        "url": "/gsoc2022-Akshay_Narisetti/2022/08/21/Coding-Period-Week-11.html",
+        "teaser": null
       }]
