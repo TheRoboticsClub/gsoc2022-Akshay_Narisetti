@@ -58,4 +58,10 @@ var store = [{
         "tags": [],
         "url": "/gsoc2022-Akshay_Narisetti/2022/08/21/Coding-Period-Week-11.html",
         "teaser": null
+      },{
+        "title": "Coding Period - Week 12",
+        "excerpt":"We discussed at the beginning of the week, and the task at hand was to migrate all local development packages into a single sdf format, while also starting to incorporate the car model into the RoboticsAcademy Project. Migration I started migrating all the xacro files to the urdf format. There...","categories": [],
+        "tags": [],
+        "url": "/gsoc2022-Akshay_Narisetti/2022/08/28/Coding-Period-Week-12.html",
+        "teaser": null
       }]
