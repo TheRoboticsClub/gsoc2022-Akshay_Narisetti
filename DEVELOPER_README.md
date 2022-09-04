@@ -5,9 +5,8 @@
 
 | Description | Model                          |
 | ----------- | ------------------------------ |
-| Lincoln MkZ   | ![](https://user-images.githubusercontent.com/58532023/179359099-c065fcc0-4d35-4003-8ae7-0fded12bd0a4.png) |
+| Lincoln MkZ   | ![](https://user-images.githubusercontent.com/58532023/188332668-9d480b78-bc1e-4164-a250-1b1cf0fdd6ff.png) |
 | Ford Escape   | ![](https://user-images.githubusercontent.com/58532023/180735392-8c089ad3-5efc-4332-8563-4cbbb530c10f.png) |
-
 
 ## Miscellaneous
 
