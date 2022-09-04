@@ -33,3 +33,7 @@
 ### Launch Keyboard Telop
 
 ```roslaunch catvehicle_tests cmdvel_unsafetest.launch```
+
+### Launch with GPS
+
+```roslaunch autonomous_vehicle_simple lincoln_mkz_camera_3d_lidar_gps.launch```
