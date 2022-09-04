@@ -17,6 +17,13 @@
 
 
 # Usage
+### Launch AutoParking Mkz Model
+
+```roslaunch autonomous_vehicle_simple autoparking_car.launch```
+
+### Launch CarJunction Mkz Model
+
+```roslaunch autonomous_vehicle_simple carjunction_car.launch```
 
 ### Launch Lincoln Mkz Model
 
