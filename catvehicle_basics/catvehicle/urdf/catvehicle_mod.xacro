@@ -40,8 +40,8 @@ http://www.car-engineer.com/vehicle-inertia-calculation-tool/
 
 <robot name="$(arg roboname)" xmlns:xacro="http://www.ros.org/wiki/xacro">
   
-  <xacro:arg name="camera_left" default="false"/>
-  <xacro:arg name="camera_right" default="false"/>
+  <xacro:arg name="camera_left" default="true"/>
+  <xacro:arg name="camera_right" default="true"/>
   <xacro:arg name="camera_front" default="true"/>
   <xacro:arg name="camera_back" default="false"/>
   
@@ -468,9 +468,9 @@ http://www.car-engineer.com/vehicle-inertia-calculation-tool/
     </inertial>	
 </link>
 
-<!--
+
 <joint name="camera_right_joint" type="fixed">
-<origin xyz="-0.75 -${car_width/2} ${0.725 + camera_box/2 + 1.25}" rpy="0 0 -${PI/2}"/>
+<origin xyz="1.5 -${car_width/2} ${0.725 + camera_box/2 + 1.25}" rpy="0 0 -${PI/2}"/>
 	<axis xyz="0 0 1"/>
 	<parent link="base_link"/>
 	<child link="camera_right_link"/>
@@ -480,14 +480,14 @@ http://www.car-engineer.com/vehicle-inertia-calculation-tool/
 	<collision>
 	  <origin xyz="0 0 0" rpy="0 0 0"/>
 	  <geometry>
-	   <box size="${camera_box} ${camera_box} ${camera_box}"/>
+	   <box size="0.001 0.001 0.001"/>
 	  </geometry>
 	</collision>
 
 	<visual>
 	  <origin xyz="0 0 0" rpy="0 0 0"/>
 	  <geometry>
-	  <box size="${camera_box} ${camera_box} ${camera_box}"
+	  <box size="0.001 0.001 0.001"
 />
           </geometry>
 	</visual>
@@ -500,7 +500,7 @@ http://www.car-engineer.com/vehicle-inertia-calculation-tool/
 </link>
 
 <joint name="camera_left_joint" type="fixed">
-<origin xyz="-0.75 ${car_width/2} ${0.725 + camera_box/2 + 1.25}" rpy="0 0 ${PI/2}"/>
+<origin xyz="1.5 ${car_width/2} ${0.725 + camera_box/2 + 1.25}" rpy="0 0 ${PI/2}"/>
 	<axis xyz="0 0 1"/>
 	<parent link="base_link"/>
 	<child link="camera_left_link"/>
@@ -510,14 +510,14 @@ http://www.car-engineer.com/vehicle-inertia-calculation-tool/
 	<collision>
 	  <origin xyz="0 0 0" rpy="0 0 0"/>
 	  <geometry>
-	   <box size="${camera_box} ${camera_box} ${camera_box}"/>
+	   <box size="0.001 0.001 0.001"/>
 	  </geometry>
 	</collision>
 
 	<visual>
 	  <origin xyz="0 0 0" rpy="0 0 0"/>
 	  <geometry>
-	  <box size="${camera_box} ${camera_box} ${camera_box}"
+	  <box size="0.001 0.001 0.001"
 />
           </geometry>
 	</visual>
@@ -528,7 +528,7 @@ http://www.car-engineer.com/vehicle-inertia-calculation-tool/
       <inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6" />
     </inertial>
 </link>
--->
+
 
 
 

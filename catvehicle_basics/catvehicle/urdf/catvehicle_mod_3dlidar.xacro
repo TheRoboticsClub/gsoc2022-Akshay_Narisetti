@@ -46,7 +46,7 @@ http://www.car-engineer.com/vehicle-inertia-calculation-tool/
   <xacro:arg name="camera_back" default="false"/>
   
   <xacro:arg name="velodyne_points" default="true"/>
-  <xacro:arg name="front_laser_points" default="true"/>
+  <xacro:arg name="front_laser_points" default="false"/>
 
 
   <xacro:property name="PI" value="3.1415926835897931"/>
@@ -94,10 +94,7 @@ http://www.car-engineer.com/vehicle-inertia-calculation-tool/
         <origin xyz="0 0 0" rpy="0 0 ${-PI/2}"/>
   </xacro:property>
   
-	<!--<xacro:include filename="$(find catvehicle)/urdf/catvehicle.gazebo"/>-->
-    <xacro:if value="${front_laser_points}">
-    	<xacro:include filename="$(find catvehicle)/urdf/catvehicle_front_laser_points.gazebo"/>
-    </xacro:if>
+
     <xacro:if value="${velodyne_points}">
       <!-- You can pass parameters in order to change the max/min
            horizontal angles of the velodyne sensors. These are interpreted 
