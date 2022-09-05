@@ -1,4 +1,60 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.2">Jekyll</generator><link href="http://localhost:4000/gsoc2022-Akshay_Narisetti/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/gsoc2022-Akshay_Narisetti/" rel="alternate" type="text/html" /><updated>2022-08-29T18:19:46+05:30</updated><id>http://localhost:4000/gsoc2022-Akshay_Narisetti/feed.xml</id><title type="html">GSOC 2022 - RoboticsAcademy</title><subtitle>GSOC 2022 project for RoboticsAcademy. The main aim is to improve Autonomous Driving Exercises at RoboticsAcademy</subtitle><entry><title type="html">Coding Period - Week 12</title><link href="http://localhost:4000/gsoc2022-Akshay_Narisetti/2022/08/28/Coding-Period-Week-12.html" rel="alternate" type="text/html" title="Coding Period - Week 12" /><published>2022-08-28T00:00:00+05:30</published><updated>2022-08-28T00:00:00+05:30</updated><id>http://localhost:4000/gsoc2022-Akshay_Narisetti/2022/08/28/Coding%20Period%20-%20Week%2012</id><content type="html" xml:base="http://localhost:4000/gsoc2022-Akshay_Narisetti/2022/08/28/Coding-Period-Week-12.html">&lt;p&gt;We discussed at the beginning of the week, and the task at hand was to migrate all local development packages into a single sdf format, while also starting to incorporate the car model into the RoboticsAcademy Project.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.2">Jekyll</generator><link href="http://localhost:4000/gsoc2022-Akshay_Narisetti/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/gsoc2022-Akshay_Narisetti/" rel="alternate" type="text/html" /><updated>2022-09-06T00:06:56+05:30</updated><id>http://localhost:4000/gsoc2022-Akshay_Narisetti/feed.xml</id><title type="html">GSOC 2022 - RoboticsAcademy</title><subtitle>GSOC 2022 project for RoboticsAcademy. The main aim is to improve Autonomous Driving Exercises at RoboticsAcademy</subtitle><entry><title type="html">Coding Period - Week 13: Final Thoughts</title><link href="http://localhost:4000/gsoc2022-Akshay_Narisetti/2022/09/05/Coding-Period-Week-13.html" rel="alternate" type="text/html" title="Coding Period - Week 13: Final Thoughts" /><published>2022-09-05T00:00:00+05:30</published><updated>2022-09-05T00:00:00+05:30</updated><id>http://localhost:4000/gsoc2022-Akshay_Narisetti/2022/09/05/Coding%20Period%20-%20Week%2013</id><content type="html" xml:base="http://localhost:4000/gsoc2022-Akshay_Narisetti/2022/09/05/Coding-Period-Week-13.html">&lt;p&gt;The final week was spent on wrapping up all the work done throughout the 3 months including documentation.&lt;/p&gt;
+
+&lt;p&gt;This summer has been the most exciting summer ever! It was great to work on a really cool project and apply what I know in Robotics Domain and web Development in which I’m very much interested in, and learn more about both along the way.&lt;/p&gt;
+
+&lt;p&gt;I would like to thank José María Cañas and Luis Roberto Morales for helping and guiding me all the way, making this possible.&lt;/p&gt;
+
+&lt;p&gt;This blog post describes some final thoughts and comments regarding the future scope and improvements to the project.&lt;/p&gt;
+
+&lt;h3 id=&quot;achievements&quot;&gt;Achievements&lt;/h3&gt;
+&lt;p&gt;During the course of these 3 months, we developed working Ackermann car models with sensor interfaces to be used in CarJunction Exercise and AutoParking Exercise of JdeRobot RoboticsAcademy. The contents of the project include:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Lincoln Mkz Model&lt;/strong&gt;: An Ackermann car model with great aesthetics, physics, and looks that are very close to the real-life self-driving car.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Ford Model&lt;/strong&gt;: Lincoln Mkz is less widely used so we came up with a choice for students who want to try out the ford model inside Exercises.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;3D Lidar&lt;/strong&gt;: The 3D Lidar was really an aspiration for both my mentors and me. Self-Driving cars such as Waymo were an inspiration for this feature and now RoboticsAcademy also has one.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;GPS Sensor and Cameras&lt;/strong&gt;: GPS Sensors and Cameras have been added as a part of implementation for the current exercise requirements and also keeping in mind the upcoming exercises like Navigation Exercise using GPS only method.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;future-scope&quot;&gt;Future Scope&lt;/h3&gt;
+&lt;p&gt;We weren’t quite able to accomplish all the objectives of the proposal, but completed all we could. Some of the improvements that I can focus in the future are:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Integration&lt;/strong&gt;: The Models are ready to be deployed to the RoboticsAcademy Docker Image, although a significant effort was made, Integrating them required a development life cycle that seems to take time, I plan on doing this post-GSoC.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;New GPS Exercise&lt;/strong&gt;: GPS Navigation teaches a lot about the inner-working and the algorithms used in self-driving cars, this would help in giving a boost towards implementation of Ackermann steering and Navigation at ease for the students.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;personal-thoughts&quot;&gt;Personal Thoughts&lt;/h3&gt;
+
+&lt;p&gt;The 3-month journey of GSoC was quite amazing. I really enjoyed writing the code and learning new things about coding, Docker, Django and evolutionary robotics. It was great being mentored by José María Sir and Luis Roberto Sir.&lt;/p&gt;
+
+&lt;p&gt;I would like to &lt;strong&gt;work further on the project&lt;/strong&gt; post-GSOC by accepting membership of the JdeRobot Organization.&lt;/p&gt;
+
+&lt;h3 id=&quot;final-product-teasers&quot;&gt;Final Product Teasers&lt;/h3&gt;
+
+&lt;!-- Courtesy of embedresponsively.com --&gt;
+
+&lt;div class=&quot;responsive-video-container&quot;&gt;
+    &lt;iframe src=&quot;https://www.youtube-nocookie.com/embed/6_kzKV7Ii6g&quot; frameborder=&quot;0&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+  &lt;/div&gt;
+
+&lt;!-- Courtesy of embedresponsively.com --&gt;
+
+&lt;div class=&quot;responsive-video-container&quot;&gt;
+    &lt;iframe src=&quot;https://www.youtube-nocookie.com/embed/PdItmMwmirs&quot; frameborder=&quot;0&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+  &lt;/div&gt;</content><author><name></name></author><summary type="html">The final week was spent on wrapping up all the work done throughout the 3 months including documentation. This summer has been the most exciting summer ever! It was great to work on a really cool project and apply what I know in Robotics Domain and web Development in which I’m very much interested in, and learn more about both along the way. I would like to thank José María Cañas and Luis Roberto Morales for helping and guiding me all the way, making this possible. This blog post describes some final thoughts and comments regarding the future scope and improvements to the project. Achievements During the course of these 3 months, we developed working Ackermann car models with sensor interfaces to be used in CarJunction Exercise and AutoParking Exercise of JdeRobot RoboticsAcademy. The contents of the project include: Lincoln Mkz Model: An Ackermann car model with great aesthetics, physics, and looks that are very close to the real-life self-driving car. Ford Model: Lincoln Mkz is less widely used so we came up with a choice for students who want to try out the ford model inside Exercises. 3D Lidar: The 3D Lidar was really an aspiration for both my mentors and me. Self-Driving cars such as Waymo were an inspiration for this feature and now RoboticsAcademy also has one. GPS Sensor and Cameras: GPS Sensors and Cameras have been added as a part of implementation for the current exercise requirements and also keeping in mind the upcoming exercises like Navigation Exercise using GPS only method. Future Scope We weren’t quite able to accomplish all the objectives of the proposal, but completed all we could. Some of the improvements that I can focus in the future are: Integration: The Models are ready to be deployed to the RoboticsAcademy Docker Image, although a significant effort was made, Integrating them required a development life cycle that seems to take time, I plan on doing this post-GSoC. New GPS Exercise: GPS Navigation teaches a lot about the inner-working and the algorithms used in self-driving cars, this would help in giving a boost towards implementation of Ackermann steering and Navigation at ease for the students. Personal Thoughts The 3-month journey of GSoC was quite amazing. I really enjoyed writing the code and learning new things about coding, Docker, Django and evolutionary robotics. It was great being mentored by José María Sir and Luis Roberto Sir. I would like to work further on the project post-GSOC by accepting membership of the JdeRobot Organization. Final Product Teasers</summary></entry><entry><title type="html">Coding Period - Week 12</title><link href="http://localhost:4000/gsoc2022-Akshay_Narisetti/2022/08/28/Coding-Period-Week-12.html" rel="alternate" type="text/html" title="Coding Period - Week 12" /><published>2022-08-28T00:00:00+05:30</published><updated>2022-08-28T00:00:00+05:30</updated><id>http://localhost:4000/gsoc2022-Akshay_Narisetti/2022/08/28/Coding%20Period%20-%20Week%2012</id><content type="html" xml:base="http://localhost:4000/gsoc2022-Akshay_Narisetti/2022/08/28/Coding-Period-Week-12.html">&lt;p&gt;We discussed at the beginning of the week, and the task at hand was to migrate all local development packages into a single sdf format, while also starting to incorporate the car model into the RoboticsAcademy Project.&lt;/p&gt;
 &lt;h3 id=&quot;migration&quot;&gt;Migration&lt;/h3&gt;
 &lt;p&gt;I started migrating all the xacro files to the urdf format. There were two ways of going about it, one way was to convert the files directly by rewriting them, which is not really realistic and the other way was to convert them using xacro command and later inspect the URDF to make sure it makes sense.&lt;/p&gt;
 
@@ -211,17 +267,4 @@
 
 &lt;div class=&quot;responsive-video-container&quot;&gt;
     &lt;iframe src=&quot;https://www.youtube-nocookie.com/embed/YJcfqoEN_XA&quot; frameborder=&quot;0&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-  &lt;/div&gt;</content><author><name></name></author><summary type="html">Before actually going ahead and building the Ackermann steering on the real-world car it was important to implement it at a low scale i.e on a toy car, this checks out as a proof-of-concept for the upcoming weeks.</summary></entry><entry><title type="html">Community Bonding - Week 2</title><link href="http://localhost:4000/gsoc2022-Akshay_Narisetti/2022/06/13/community-bonding-week-2.html" rel="alternate" type="text/html" title="Community Bonding - Week 2" /><published>2022-06-13T00:00:00+05:30</published><updated>2022-06-13T00:00:00+05:30</updated><id>http://localhost:4000/gsoc2022-Akshay_Narisetti/2022/06/13/community-bonding-week-2</id><content type="html" xml:base="http://localhost:4000/gsoc2022-Akshay_Narisetti/2022/06/13/community-bonding-week-2.html">&lt;p&gt;To kick off week 2 of the community bonding period We discussed at the beginning of the week to continue exploring the car models part of the Codebase while also exploring the Ackermann steering and packages that will help in the implementation of 3d Lidar on the car models.&lt;/p&gt;
-
-&lt;h3 id=&quot;tasks&quot;&gt;Tasks&lt;/h3&gt;
-&lt;ul class=&quot;task-list&quot;&gt;
-  &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; checked=&quot;checked&quot; /&gt;Explore Gazebo 11, plugins, tools and utilities.&lt;/li&gt;
-  &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; checked=&quot;checked&quot; /&gt;Explore 3D lidar packages and plugins.
-&lt;img src=&quot;/gsoc2022-Akshay_Narisetti/assets/images/3dlidar.jpg&quot; alt=&quot;New Blocks&quot; class=&quot;align-center&quot; /&gt;&lt;/li&gt;
-  &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; checked=&quot;checked&quot; /&gt;Explore supported Ackermann steering packages in ROS.&lt;/li&gt;
-  &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; checked=&quot;checked&quot; /&gt;Explore exsiting car models from the &lt;a href=&quot;https://github.com/JdeRobot/CustomRobots&quot;&gt;CustomRobots Repository&lt;/a&gt; and  exisiting self-driving excercises.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;conclusions&quot;&gt;Conclusions&lt;/h2&gt;
-
-&lt;p&gt;Gazebo 11 plugins have majorly been explored, and the 3d lidar packages like Velodyne which generates a point cloud have been implemented. The [Ackermann Steering] (https://wiki.ros.org/action/fullsearch/ackermann_steering_controller) package which can be used on custom gazebo models has been explored. This package can be used at a later stage to add Ackermann steering to the call models.&lt;/p&gt;</content><author><name>Akshay Narisetti</name></author><summary type="html">To kick off week 2 of the community bonding period We discussed at the beginning of the week to continue exploring the car models part of the Codebase while also exploring the Ackermann steering and packages that will help in the implementation of 3d Lidar on the car models.</summary></entry></feed>
+  &lt;/div&gt;</content><author><name></name></author><summary type="html">Before actually going ahead and building the Ackermann steering on the real-world car it was important to implement it at a low scale i.e on a toy car, this checks out as a proof-of-concept for the upcoming weeks.</summary></entry></feed>

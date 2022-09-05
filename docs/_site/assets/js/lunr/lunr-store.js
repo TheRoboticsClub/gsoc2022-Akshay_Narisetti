@@ -64,4 +64,10 @@ var store = [{
         "tags": [],
         "url": "/gsoc2022-Akshay_Narisetti/2022/08/28/Coding-Period-Week-12.html",
         "teaser": null
+      },{
+        "title": "Coding Period - Week 13: Final Thoughts",
+        "excerpt":"The final week was spent on wrapping up all the work done throughout the 3 months including documentation. This summer has been the most exciting summer ever! It was great to work on a really cool project and apply what I know in Robotics Domain and web Development in which...","categories": [],
+        "tags": [],
+        "url": "/gsoc2022-Akshay_Narisetti/2022/09/05/Coding-Period-Week-13.html",
+        "teaser": null
       }]
