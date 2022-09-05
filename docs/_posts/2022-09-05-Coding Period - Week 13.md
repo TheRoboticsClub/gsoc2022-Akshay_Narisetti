@@ -1,6 +1,6 @@
 ---
 layout: single
-title:  "Coding Period - Week 13: Final Thoughts"
+title:  "Week 13: Final Thoughts"
 ---
 The final week was spent on wrapping up all the work done throughout the 3 months including documentation.
  
